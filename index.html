@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Guessing game</title>
+    <link
+      rel="stylesheet"
+      href="style/style.css" />
+  </head>
+  <body>
+    <!-- START PAGE HTML -->
+    <div class="start_page center align-center">
+      <div class="start_page-content center align-center column">
+        <img
+          src="assets/happy.png"
+          alt="happy emoji"
+          class="start_page-emoji" />
+        <h1 class="start_page-title">WELCOME TO NUMBER GUESSING GAME</h1>
+        <p class="start_page-desc">
+          This is a Number guessing game. One person pick a number between 0 to
+          10 and the other two person guess the number whoever guess the number
+          first win the game
+        </p>
+        <h2 class="start_page-button">Press enter to start the game</h2>
+      </div>
+    </div>
+
+    <!-- PLAYER BOX -->
+    <div class="player_box-container">
+      <!-- PLAYER ONE BOX -->
+      <div class="player_one-box player_box column center align-center">
+        <img
+          src="assets/hidingeye.png"
+          alt="hidingeye"
+          class="player_one-emoji player_emoji" />
+        <h3 class="player_one-title player_title">PLAYER ONE</h3>
+        <p class="player_one-desc player_desc">Pick a number between 0 to 10</p>
+        <input
+          type="password"
+          placeholder="Type a number.."
+          class="player_one-input player_input" />
+        <button class="player_one-btn player_btn">START THE GAME</button>
+      </div>
+
+      <!-- PLAYER TWO BOX -->
+      <div class="player_two-box player_box column center align-center">
+        <div class="player_health player_two-health center align-center">
+          <img
+            src="assets/heart.png"
+            class="heart_emoji"
+            alt="heart" />
+          <img
+            src="assets/heart.png"
+            class="heart_emoji"
+            alt="heart" />
+          <img
+            src="assets/heart.png"
+            class="heart_emoji"
+            alt="heart" />
+          <img
+            src="assets/heart.png"
+            class="heart_emoji"
+            alt="heart" />
+          <img
+            src="assets/heart.png"
+            class="heart_emoji"
+            alt="heart" />
+        </div>
+        <img
+          src="assets/thinking.png"
+          alt="hidingeye"
+          class="player_two-emoji-thinking player_emoji d_none" />
+        <img
+          src="assets/sad.png"
+          alt="hidingeye"
+          class="player_two-emoji-sad player_emoji d_none" />
+        <h3 class="player_two-title player_title">PLAYER TWO</h3>
+        <p class="player_two-desc player_desc">
+          You only have 5 chance to guess the number before the game over
+        </p>
+        <input
+          type="password"
+          placeholder="Guess the number.."
+          class="player_two-input player_input" />
+        <button class="player_two-btn player_btn">GUESS THE NUMBER</button>
+      </div>
+
+      <!-- PLAYER THREE BOX -->
+      <div class="player_three-box player_box column center align-center">
+        <div class="player_health player_three-health center align-center">
+          <img
+            src="assets/heart.png"
+            class="heart_emoji"
+            alt="heart" />
+          <img
+            src="assets/heart.png"
+            class="heart_emoji"
+            alt="heart" />
+          <img
+            src="assets/heart.png"
+            class="heart_emoji"
+            alt="heart" />
+          <img
+            src="assets/heart.png"
+            class="heart_emoji"
+            alt="heart" />
+          <img
+            src="assets/heart.png"
+            class="heart_emoji"
+            alt="heart" />
+        </div>
+        <img
+          src="assets/thinking.png"
+          alt="thinking emoji"
+          class="player_three-emoji-thinking player_emoji d_none" />
+        <img
+          src="assets/sad.png"
+          alt="thinking emoji"
+          class="player_three-emoji-sad player_emoji d_none" />
+        <h3 class="player_three-title player_title">PLAYER THREE</h3>
+        <p class="player_three-desc player_desc">
+          You only have 5 chance to guess the number before the game over
+        </p>
+        <input
+          type="password"
+          placeholder="Guess the number.."
+          class="player_three-input player_input" />
+        <button class="player_three-btn player_btn">GUESS THE NUMBER</button>
+      </div>
+    </div>
+
+    <!-- GAME OVER PAGE -->
+    <div class="game_over-page center align-center column remove_page">
+      <img
+        src="assets/congratulation.png"
+        alt="congratulation emoji"
+        class="game_over-page-emoji" />
+      <h1 class="game_over-page-title">CONGRATULATION</h1>
+      <h2 class="game_over-page-sub-title">Player one wone</h2>
+      <h3 class="game_over-page-btn">Press enter to start the game</h3>
+    </div>
+    <script
+      src="js/script.js"
+      type="module"></script>
+  </body>
+</html>
